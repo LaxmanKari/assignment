@@ -1,0 +1,22 @@
+.filter-card {
+  width: 280px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  justify-content: space-between;
+}
+
+.filter-by {
+  font-size: small;
+  color: gray;
+  padding-bottom: 20px;
+}
+
+select {
+  border: none;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+  font-size: large;
+  color: black;
+}

@@ -2,21 +2,21 @@ import { Product } from "../types/product";
 
 export const ProductsData: Product[] = [
   {
-    image: "https://placehold.co/150x150",
+    image: "https://placehold.co/100x100",
     name: "Wooden Chair",
     category: "Furniture",
     price: "$10.00",
     rating: 4,
   },
   {
-    image: "https://placehold.co/150x150",
+    image: "https://placehold.co/100x100",
     name: "Wool",
     category: "Furniture",
     price: "$5.00",
     rating: 2,
   },
   {
-    image: "https://placehold.co/150x150",
+    image: "https://placehold.co/100x100",
     name: "Chair",
     category: "Furniture",
     price: "$50.00",
@@ -30,14 +30,14 @@ export const ProductsData: Product[] = [
     rating: 4,
   },
   {
-    image: "https://placehold.co/150x150",
-    name: "System Design- Frontend",
+    image: "https://placehold.co/100x100",
+    name: "System Design",
     category: "Books",
     price: "$30.00",
     rating: 4,
   },
   {
-    image: "https://placehold.co/150x150",
+    image: "https://placehold.co/100x100",
     name: "Ball",
     category: "Sports",
     price: "$10.00",

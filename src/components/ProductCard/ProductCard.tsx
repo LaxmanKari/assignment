@@ -11,7 +11,7 @@ const ProductCard: React.FC<Product> = ({
 }) => {
   return (
     <div className="product-card">
-      <img src={image} alt={name} className="product-image" />
+      <img src="/images/car.jpg" alt={name} className="product-image" />
       <div className="product-details">
         <h3 className="product-name">{name}</h3>
         <div className="product-meta">
