@@ -8,11 +8,11 @@ const ProductCard: React.FC<Product> = ({
   category,
   price,
   rating,
-  handleClickProduct,
+  handleclickproduct,
   id
 }) => {
   const handleProductCardClick = () => {
-    handleClickProduct(id);
+    handleclickproduct(id);
   };
 
   return (

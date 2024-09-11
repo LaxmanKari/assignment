@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-// import '@testing-library/jest-dom'
 import ProductCard from "./ProductCard";
 
 describe("ProductCard", () => {
@@ -12,7 +11,7 @@ describe("ProductCard", () => {
     category: "Test Category",
     price: "$10",
     rating: "4.5",
-    handleClickProduct: mockHandleClickProduct,
+    handleclickproduct: mockHandleClickProduct,
     id: 1,
   };
 

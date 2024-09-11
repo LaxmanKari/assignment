@@ -1,9 +1,7 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import BodyContainer from "./BodyContainer";
-import Products from "../Products/Products";
-import Pagination from "../Pagination/Pagination";
 
 jest.mock("../Products/Products", () => (props) => (
   <div data-testid="products" {...props} />

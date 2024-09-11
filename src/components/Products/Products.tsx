@@ -26,7 +26,7 @@ const Products: React.FC<ProductsProps> = ({ pagenumber }) => {
           category={product.category}
           price={product.price}
           rating={product.rating}
-          handleClickProduct={handleProductClick}
+          handleclickproduct={handleProductClick}
           id={product.id}
         />
       ))}

@@ -4,7 +4,7 @@ export interface Product {
   category: string;
   price: string;
   rating: number;
-  handleClickProduct?;
+  handleclickproduct?;
   id?: number;
   images?: string[];
 }

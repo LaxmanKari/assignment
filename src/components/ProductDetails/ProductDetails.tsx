@@ -11,7 +11,7 @@ const ProductDetails: React.FC = () => {
     "This is a mock description for products, It's a goog product with good reasonable price and with a good made quality";
   const mockImages = ['chair.jpg', 'cycle.jpg']; 
   if (!product) {
-    <div>Product not found</div>;
+    return <div>Product not found</div>;
   }
 
   return (
