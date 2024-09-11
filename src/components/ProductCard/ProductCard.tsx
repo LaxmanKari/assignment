@@ -9,8 +9,11 @@ const ProductCard: React.FC<Product> = ({
   price,
   rating,
 }) => {
+  const handleProductCardClick = () => {
+    console.log(name);
+  }
   return (
-    <div className="product-card">
+    <div className="product-card" onClick={handleProductCardClick}>
       <img src="/images/car.jpg" alt={name} className="product-image" />
       <div className="product-details">
         <h3 className="product-name">{name}</h3>

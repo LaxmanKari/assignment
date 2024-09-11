@@ -5,3 +5,12 @@ export interface Product {
   price: string;
   rating: number;
 }
+
+export interface PaginationProps {
+  totalProductsCount: number;
+  handlePageUpdation;
+}
+
+export interface ProductsProps {
+  pageNumber: number;
+}
