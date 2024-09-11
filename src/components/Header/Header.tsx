@@ -9,7 +9,7 @@ function Header() {
     setMenuOpen(!isMenuOpen);
   };
 
-  const handleHomeClick = (name) => {
+  const handleHomeClick = () => {
     navigate("/");
   }
   return (
@@ -18,6 +18,7 @@ function Header() {
         <button
           className={`menu-button ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
+          data-testid="menu-button"
         >
           <i className="fas fa-bars"></i>
         </button>
@@ -30,10 +31,10 @@ function Header() {
         )}
       </div>
       <div className="header-right">
-        <button className="icon-button">
+        <button className="icon-button " data-testid="search-button">
           <i className="fas fa-search"></i>
         </button>
-        <button className="icon-button">
+        <button className="icon-button" data-testid="cart-button">
           <i className="fas fa-shopping-cart"></i>
         </button>
         <button className="login-button">LOGIN</button>

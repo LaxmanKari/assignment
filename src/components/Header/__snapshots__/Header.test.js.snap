@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component renders Header component correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="header"
+  >
+    <div
+      class="header-left"
+    >
+      <button
+        class="menu-button active"
+        data-testid="menu-button"
+      >
+        <i
+          class="fas fa-bars"
+        />
+      </button>
+      <button
+        class="menu-item"
+      >
+        HOME
+      </button>
+      <button
+        class="menu-item"
+      >
+        SHOP
+      </button>
+      <button
+        class="menu-item"
+      >
+        MAGAZINE
+      </button>
+    </div>
+    <div
+      class="header-right"
+    >
+      <button
+        class="icon-button "
+        data-testid="search-button"
+      >
+        <i
+          class="fas fa-search"
+        />
+      </button>
+      <button
+        class="icon-button"
+        data-testid="cart-button"
+      >
+        <i
+          class="fas fa-shopping-cart"
+        />
+      </button>
+      <button
+        class="login-button"
+      >
+        LOGIN
+      </button>
+    </div>
+  </header>
+</DocumentFragment>
+`;
