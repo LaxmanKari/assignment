@@ -1,6 +1,6 @@
 import React from "react";
 import { Product } from "../../types/product";
-import "./ProductCard.css";
+import "./productCard.css";
 
 const ProductCard: React.FC<Product> = ({
   image,
@@ -17,7 +17,7 @@ const ProductCard: React.FC<Product> = ({
 
   return (
     <div className="product-card" onClick={handleProductCardClick}>
-      <img src="/images/car.jpg" alt={name} className="product-image" />
+      <img src="/images/Chair.jpg" alt={name} className="product-image" />
       <div className="product-details">
         <h3 className="product-name">{name}</h3>
         <div className="product-meta">
@@ -27,7 +27,7 @@ const ProductCard: React.FC<Product> = ({
         <div className="product-footer">
           <span>Rating:{rating}</span>
           <button className="add-to-cart-button">
-            <i className="fas fa-shopping-cart"></i>{" "}
+            <i className="fa-solid fa-cart-plus"></i>{" "}
           </button>
         </div>
       </div>

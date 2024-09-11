@@ -1,10 +1,10 @@
 .product-card {
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 290px;
   margin: 5px;
   display: flex;
   flex-direction: column;
+  padding: 0 85px 0 85px; 
 }
 
 .product-card:hover {
@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: none;
+  background-color: white;
 }
 
 .add-to-cart-button i {

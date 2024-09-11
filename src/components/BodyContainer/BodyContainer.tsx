@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Products from "../Products/Products.tsx";
-import "./BodyContainer.css";
+import "./bodyContainer.css";
 import Pagination from "../Pagination/Pagination.tsx";
 import { ProductsData } from "../../data/productsData.ts";
 

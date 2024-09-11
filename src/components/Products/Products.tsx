@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "../ProductCard/ProductCard.tsx";
-import "./Products.css";
+import "./products.css";
 import { ProductsData } from "../../data/productsData.ts";
 import Filter from "../Filter/Filter.tsx";
 import type { ProductsProps } from "../../types/product";

@@ -8,6 +8,7 @@ export const ProductsData: Product[] = [
     price: "$10.00",
     rating: 4,
     id: 1,
+    images: ['chair.jpg', 'cycle.jpg']
   },
   {
     image: "https://placehold.co/100x100",
@@ -16,6 +17,7 @@ export const ProductsData: Product[] = [
     price: "$5.00",
     rating: 2,
     id: 2,
+    images: ['car.jpg', 'chair.jpg', 'cycle.jpg']
   },
   {
     image: "https://placehold.co/100x100",
@@ -43,7 +45,7 @@ export const ProductsData: Product[] = [
   },
   {
     image: "https://placehold.co/150x150",
-    name: "Fruite bowl",
+    name: "Fruit bowl",
     category: "Home",
     price: "$10.00",
     rating: 4,

@@ -5,7 +5,8 @@ export interface Product {
   price: string;
   rating: number;
   handleClickProduct?;
-  id?: number,
+  id?: number;
+  images?: string[];
 }
 
 export interface PaginationProps {
