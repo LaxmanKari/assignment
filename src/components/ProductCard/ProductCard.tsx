@@ -8,10 +8,13 @@ const ProductCard: React.FC<Product> = ({
   category,
   price,
   rating,
+  handleClickProduct,
+  id
 }) => {
   const handleProductCardClick = () => {
-    console.log(name);
-  }
+    handleClickProduct(id);
+  };
+
   return (
     <div className="product-card" onClick={handleProductCardClick}>
       <img src="/images/car.jpg" alt={name} className="product-image" />

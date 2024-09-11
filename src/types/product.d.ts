@@ -4,6 +4,8 @@ export interface Product {
   category: string;
   price: string;
   rating: number;
+  handleClickProduct?;
+  id?: number,
 }
 
 export interface PaginationProps {
@@ -13,4 +15,8 @@ export interface PaginationProps {
 
 export interface ProductsProps {
   pageNumber: number;
+}
+
+export interface ProductDetailsProps {
+  productId: string;
 }

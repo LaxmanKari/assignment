@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import './Header.css';
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(true);
-
+  const navigate = useNavigate();
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+
+  const handleHomeClick = (name) => {
+    navigate("/");
+  }
   return (
     <header className="header">
       <div className="header-left">
@@ -18,7 +23,7 @@ function Header() {
         </button>
         {isMenuOpen && (
           <>
-            <button className="menu-item">HOME</button>
+            <button className="menu-item" onClick={handleHomeClick}>HOME</button>
             <button className="menu-item">SHOP</button>
             <button className="menu-item">MAGAZINE</button>
           </>
