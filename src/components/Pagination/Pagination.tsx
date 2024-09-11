@@ -3,14 +3,14 @@ import type { PaginationProps } from "../../types/product.d.ts";
 import './pagination.css';
 
 const Pagination: React.FC<PaginationProps> = ({
-  totalProductsCount,
-  handlePageUpdation,
+  totalproductscount,
+  handlepageupdation,
 }) => {
   const [pagesCount, setPagesCount] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
 
   const handleCurrentPageUpdation = (page: number) => {
-    handlePageUpdation(page);
+    handlepageupdation(page);
     setCurrentPage(page);
   };
 
@@ -24,16 +24,16 @@ const Pagination: React.FC<PaginationProps> = ({
 
   useEffect(() => {
     const setPages = () => {
-      const remainder = totalProductsCount % 7;
+      const remainder = totalproductscount % 7;
       if (remainder === 0) {
-        setPagesCount(totalProductsCount / 7);
+        setPagesCount(totalproductscount / 7);
       } else {
-        const pages = totalProductsCount + (7 - remainder);
+        const pages = totalproductscount + (7 - remainder);
         setPagesCount(pages / 7);
       }
     };
     setPages();
-  }, [totalProductsCount]);
+  }, [totalproductscount]);
   return (
     <div className="pagination">
       {currentPage !== 1 ? (

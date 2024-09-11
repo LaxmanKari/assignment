@@ -10,12 +10,12 @@ export interface Product {
 }
 
 export interface PaginationProps {
-  totalProductsCount: number;
-  handlePageUpdation;
+  totalproductscount: number;
+  handlepageupdation;
 }
 
 export interface ProductsProps {
-  pageNumber: number;
+  pagenumber: number;
 }
 
 export interface ProductDetailsProps {

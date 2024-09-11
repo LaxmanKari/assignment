@@ -8,15 +8,15 @@ function BodyContainer() {
   const [currentPage, setCurrentPage] = useState(1);
   const productsCount = ProductsData.length;
 
-  const handlePageUpdation = (page) => {
+  const handlePageUpdation = (page: number) => {
     setCurrentPage(page);
   };
   return (
     <div className="body-container">
-      <Products pageNumber={currentPage} />
+      <Products pagenumber={currentPage} />
       <Pagination
-        totalProductsCount={productsCount}
-        handlePageUpdation={handlePageUpdation}
+        totalproductscount={productsCount}
+        handlepageupdation={handlePageUpdation}
       />
     </div>
   );

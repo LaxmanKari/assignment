@@ -6,15 +6,15 @@ import Filter from "../Filter/Filter.tsx";
 import type { ProductsProps } from "../../types/product";
 import { useNavigate } from "react-router-dom";
 
-const Products: React.FC<ProductsProps> = ({ pageNumber }) => {
+const Products: React.FC<ProductsProps> = ({ pagenumber }) => {
   const navigate = useNavigate();
-  const endIndex = (pageNumber * 7) + 1;
+  const endIndex = pagenumber * 7 + 1;
   const startIndex = endIndex - 7;
   const filteredProducts = ProductsData.slice(startIndex, endIndex);
 
-  const handleProductClick = (name) => {
-    navigate(`/product/${name}`)
-  }
+  const handleProductClick = (id) => {
+    navigate(`/product/${id}`);
+  };
   return (
     <div className="products-container">
       <Filter />
